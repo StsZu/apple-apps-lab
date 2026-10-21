@@ -115,7 +115,7 @@ symbols = ''.join(f'<symbol id="i-{name}" viewBox="0 0 24 24">{path}</symbol>' f
 page = '''<!doctype html>
 <html lang="uk"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f7f9f2">
+<meta name="theme-color" content="#f7fbff">
 <meta name="description" content="Практичний посібник: власні застосунки для iPad через Claude Code, PWA, SwiftUI та GitHub Pages. Порівняння, інструкції й офіційні джерела.">
 <title>Власні застосунки для iPad · Apple Apps Lab</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
@@ -140,5 +140,5 @@ for key, value in {'SYMBOLS': symbols, 'NAV': nav, 'ARTICLES': '\n'.join(article
 DOCS.mkdir(exist_ok=True)
 (DOCS / 'index.html').write_text(page, encoding='utf-8')
 shutil.copyfile(SOURCE, DOCS / 'report.md')
-(DOCS / 'icon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="19" fill="#315e42"/><g fill="#d5edc5"><rect x="14" y="14" width="15" height="15" rx="5"/><rect x="35" y="14" width="15" height="15" rx="5"/><rect x="14" y="35" width="15" height="15" rx="5"/><rect x="35" y="35" width="15" height="15" rx="5"/></g></svg>\n', encoding='utf-8')
+(DOCS / 'icon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="19" fill="#b8dfff"/><g fill="#225575"><rect x="14" y="14" width="15" height="15" rx="5"/><rect x="35" y="14" width="15" height="15" rx="5"/><rect x="14" y="35" width="15" height="15" rx="5"/><rect x="35" y="35" width="15" height="15" rx="5"/></g></svg>\n', encoding='utf-8')
 print('Built docs/index.html, docs/report.md and docs/icon.svg')

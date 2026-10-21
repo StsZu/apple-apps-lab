@@ -10,7 +10,7 @@ function setTheme(theme) {
   root.dataset.theme = theme;
   themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
   themeButton.setAttribute('aria-label', theme === 'dark' ? 'Увімкнути світлу тему' : 'Увімкнути темну тему');
-  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111810' : '#f7f9f2';
+  document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#101820' : '#f7fbff';
 }
 setTheme(themePreference === 'light' || themePreference === 'dark' ? themePreference : systemTheme.matches ? 'dark' : 'light');
 themeButton.addEventListener('click', () => {
